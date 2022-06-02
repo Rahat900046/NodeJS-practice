@@ -1,9 +1,20 @@
-const fs= require('fs')
+// const fs= require('fs')
 
-fs.readFile('./test.json', (err,data)=>{
+// fs.readFile('./test.json', (err,data)=>{
+//     if(err){
+//         return console.log(err);
+//     }
+//     let obj= JSON.parse(data)
+//     console.log(obj.address.city);
+// })
+
+
+
+const fs= require('fs')
+fs.readFile('./test.json',(err,data)=>{
     if(err){
         return console.log(err);
     }
-    let obj= JSON.parse(data)
-    console.log(obj.address.city);
+    let obj=JSON.parse(data)
+    console.log(obj.email);
 })
